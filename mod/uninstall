@@ -1,0 +1,8 @@
+# animatedsplash.hmod 
+# v0.1 - Jan 27th, 2018
+# https://www.reddit.com/r/miniSNESmods/
+
+rm -f "$rootfs/bin/fbff"
+rm -f "$rootfs/etc/preinit.d/p7008_bootvideo"
+rm -f "$rootfs/etc/preinit.d/p7009_bootvideo"
+rm -f "$rootfs/boot.mp4/"

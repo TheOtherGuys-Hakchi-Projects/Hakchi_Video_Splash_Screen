@@ -1,0 +1,18 @@
+playBootVideo(){
+
+  chmod +x $rootfs/bin/fbff
+  
+  echo 3 > /proc/sys/vm/drop_caches
+
+  dd if=/dev/zero of=/dev/fb0 #Kill Framebuffer Device
+
+  fbff -s -u -x 214 -y 120 $rootfs/boot.mp4
+  
+  waitTask fbff
+  
+  echo 3 > /proc/sys/vm/drop_caches
+  
+  return 0
+}
+
+playBootVideo

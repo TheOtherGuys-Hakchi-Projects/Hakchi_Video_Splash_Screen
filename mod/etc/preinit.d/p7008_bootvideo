@@ -1,0 +1,9 @@
+overmount "$rootfs/etc/preinit.d/p7010_bootlogo" "$rootfs/etc/preinit.d/p7009_bootvideo"
+
+showImage(){
+  return 0
+}
+
+playSound(){
+  return 0
+}
