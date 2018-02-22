@@ -6,11 +6,13 @@ playBootVideo(){
 
   dd if=/dev/zero of=/dev/fb0 #Kill Framebuffer Device
 
-  fbff -s -u -x 214 -y 120 $rootfs/boot.mp4
+  fbff -s -u -x 214 -y 120 $rootfs/etc/Hakchi_Video_Splash_Screen/boot.mp4
   
   waitTask fbff
   
   echo 3 > /proc/sys/vm/drop_caches
+  
+  decodepng $rootfs/etc/Hakchi_Video_Splash_Screen/boot-min.png > /dev/fb0
   
   return 0
 }

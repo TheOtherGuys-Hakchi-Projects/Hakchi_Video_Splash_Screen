@@ -1,6 +1,6 @@
-all: out/Hakchi_Video_Splash_0.hmod
+all: out/Hakchi_Video_Splash_1.hmod
 
-out/Hakchi_Video_Splash_0.hmod:
+out/Hakchi_Video_Splash_1.hmod:
 	mkdir -p out/
 	cd mod/; tar -czvf "../$@" *
 	touch "$@"
