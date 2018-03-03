@@ -5,6 +5,8 @@ playBootVideo(){
   echo 3 > /proc/sys/vm/drop_caches
 
   dd if=/dev/zero of=/dev/fb0 #Kill Framebuffer Device
+  
+  decodepng $rootfs/etc/Hakchi_Video_Splash_Screen/pre-boot-min.png > /dev/fb0
 
   fbff -s -u -x 214 -y 120 $rootfs/etc/Hakchi_Video_Splash_Screen/boot.mp4
   

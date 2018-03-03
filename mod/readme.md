@@ -1,5 +1,5 @@
 -----------------------
-Name: Hakchi Video Splash Screen 1
+Name: Hakchi Video Splash Screen 2 - Hakchi Resources Splash
 
 Creator: [TheOtherGuys](https://www.reddit.com/r/miniSNESmods/wiki/theotherguys)
 
@@ -11,13 +11,6 @@ It's an awesome Hakchi2 module (HMOD) which adds a video splash screen to your N
 
 ### What's new?
 There used to be a lot of memory leaks with the old build of FBFF and FFMPEG we were using, however we're using a newer build of FBFF which utilizes ALSA for sound output and has no memory issues. We also added Cache and inode clearing to the start and end of the video playback, so it actually does your console good as it will clear up any crap half way through the boot. We also resolved the previous issues with the N64 emulator.
-
-### What does it look like?
-*Here's an example - This is the initial release intro made by ThanosRD.* 
-
-`Click the image below to view it on YouTube.`
-
-[![Hakchi Boot Screen 1 - Super Nintendo Mini boot Screen Demo](https://imghost.io/images/2018/02/27/splash_preview_image.png)](https://www.youtube.com/watch?v=I8sacf6myn8 "Hakchi Boot Screen 1 - Super Nintendo Mini boot Screen Demo")
 
 ### How large is this HMOD?
 In total it takes a whopping 10.5mb of NAND space, so it's not for the faint of heart. However, in the future when we release a standalone media player we will be using the same FBFF binary, so you will also have a stand alone media player along with a video splash screen. The video file included is actually only around 865KB. We'll also be releasing a build for USB/SD users.
